@@ -1,0 +1,63 @@
+/* USER VARIABLES SECTION */
+:root {
+    --gray: #868585;
+    --white: #fff;
+    --black: #303030;
+    --onhover: #A9A32A;
+    --regular-text: 14px;
+    --line-height: 19px;
+    --userfont: NotoSans, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS */
+/* gutter 30px (15px + 15px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .5rem; }
+.row, .row > * { --bs-gutter-x: 1rem; }
+
+/* FONTS LOAD SECTION */
+@font-face {
+    src: url(src/assets/fonts/NotoSans-Regular.ttf) format("truetype");
+    font-family: "NotoSans";
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(src/assets/fonts/NotoSans-Bold.ttf) format("truetype");
+    font-family: "NotoSans";
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* GENERAL CSS SETTINGS */
+body {
+    font-family: var(--userfont);
+    font-size: var(--regular-text);
+    line-height: var(--line-height);
+    color: var(--black);
+    min-width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--white);
+    margin: 0;
+}
+
+@media (min-width: 1000px) {
+    .container{
+        max-width: 1200px;
+        padding: 0;
+    }
+}
+
+.main {
+    background-image: url("../assets/pictures/background.png");
+    height: 900px;
+    width: 100%;
+}
+
+.logo {
+    margin: 70px;
+    align-items: center;
+    z-index: 200;
+}
